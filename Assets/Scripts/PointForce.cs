@@ -15,8 +15,7 @@ public class PointForce : MonoBehaviour {
         foreach(var hit in hits) {
             var enemy = hit.collider.GetComponent<BaseModel>();
             if(enemy != null) {
-                enemy.AddForce();
-                enemy.DoRagDoll(true);
+                enemy.EnableRagdoll();
             }
         }
     }
