@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerWeapon : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class PlayerWeapon : MonoBehaviour {
+    public CameraAim cameraAim;
+    public Animator animator;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void Update() {
+        if(Input.GetMouseButtonDown(1)) {
+            cameraAim.SwitchToAimView();
+        }
+        if(Input.GetMouseButton(1)) {
+            animator.SetBool("Shoot", true);
+        }
+        if(Input.GetMouseButtonUp(1)) {
+            cameraAim.SwitchToDefault();
+            animator.SetBool("Shoot", false);
+        }
     }
 }

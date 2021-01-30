@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour {
 
     private void Update() {
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+
         animator.SetFloat("Speed", movement.magnitude);
 
         if(movement.magnitude >= 0.1f) {
