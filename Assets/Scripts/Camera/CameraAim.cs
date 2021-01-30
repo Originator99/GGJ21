@@ -8,13 +8,13 @@ public class CameraAim : MonoBehaviour {
     public Transform defaultView, aimView;
 
     public void SwitchToDefault() {
-        cam.transform.DOMove(defaultView.position, 0.5f);
-        cam.transform.DORotate(defaultView.rotation.eulerAngles,0.5f);
+        cam.transform.DOLocalMove(defaultView.position, 0.5f);
+        cam.transform.DOLocalRotate(defaultView.rotation.eulerAngles,0.5f);
 
     }
 
     public void SwitchToAimView() {
-        cam.transform.DOMove(aimView.position, 0.5f);
-        cam.transform.DORotate(aimView.rotation.eulerAngles, 0.5f);
+        cam.transform.DOLocalMove(aimView.position, 0.5f);
+        cam.transform.DOLocalRotate(aimView.rotation.eulerAngles, 0.5f);
     }
 }

@@ -29,6 +29,9 @@ public class Gun :MonoBehaviour {
     //bug fixing :D
     public bool allowInvoke = true;
 
+    //Target Vector
+    public Vector3 aimTarget;
+
     private void Awake() {
         //make sure magazine is full
         bulletsLeft = magazineSize;
@@ -69,14 +72,13 @@ public class Gun :MonoBehaviour {
         RaycastHit hit;
 
         //check if ray hits something
-        Vector3 targetPoint;
         if(Physics.Raycast(ray, out hit))
-            targetPoint = hit.point;
+            aimTarget = hit.point;
         else
-            targetPoint = ray.GetPoint(75); //Just a point far away from the player
+            aimTarget  = ray.GetPoint(75); //Just a point far away from the player
 
         //Calculate direction from attackPoint to targetPoint
-        Vector3 directionWithoutSpread = targetPoint - attackPoint.position;
+        Vector3 directionWithoutSpread = aimTarget - attackPoint.position;
 
         //Calculate spread
         float x = Random.Range(-spread, spread);

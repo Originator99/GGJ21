@@ -56,4 +56,12 @@ public class PlayerWeapon : MonoBehaviour {
         playerCam.transform.localRotation = Quaternion.Euler(xRotation, desiredX, 0);
         orientation.transform.localRotation = Quaternion.Euler(0, desiredX, 0);
     }
+
+    private void OnAnimatorIK() {
+        //weapon aim at target
+        animator.SetIKPositionWeight(AvatarIKGoal.RightHand, 1);
+        animator.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1);
+        animator.SetIKPosition(AvatarIKGoal.RightHand, gun.aimTarget);
+        animator.SetIKPosition(AvatarIKGoal.LeftHand, gun.aimTarget); ;
+    }
 }
