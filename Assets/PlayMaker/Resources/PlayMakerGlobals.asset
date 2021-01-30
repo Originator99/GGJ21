@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: PlayMakerGlobals
   m_EditorClassIdentifier: 
   variables:
-    floatVariables: []
+    floatVariables:
+    - useVariable: 1
+      name: Ammo
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     intVariables: []
     boolVariables: []
     stringVariables: []
@@ -30,5 +36,8 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 
-  events: []
+    variableCategoryIDs: 00000000
+  events:
+  - NoAmmo
+  - Reloaded
+  - Damage
