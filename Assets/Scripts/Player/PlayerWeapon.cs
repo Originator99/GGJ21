@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerWeapon : MonoBehaviour {
     public CameraAim cameraAim;
     public Animator animator;
+    public Gun gun;
 
     private void Update() {
         if(Input.GetMouseButtonDown(1)) {
