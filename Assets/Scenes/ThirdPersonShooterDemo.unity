@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 131.16855, g: 162.52502, b: 215.10977, a: 1}
+  m_IndirectSpecularColor: {r: 131.1594, g: 162.49646, b: 215.04776, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1149,6 +1149,36 @@ Transform:
   m_Father: {fileID: 737497561}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &224389033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224389034}
+  m_Layer: 0
+  m_Name: CameraFollow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &224389034
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224389033}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.819, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3843708874622498347}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &229218185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,7 +1524,7 @@ RectTransform:
   m_Children:
   - {fileID: 2006259184}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1685,7 +1715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: a123fc0ac58cb774e8592c925f167e7c, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 987377241}
+  m_SkySettings: {fileID: 1118311809}
   m_SkySettingsFromProfile: {fileID: -1658960478407648048, guid: a123fc0ac58cb774e8592c925f167e7c,
     type: 2}
 --- !u!4 &313761475
@@ -1732,6 +1762,59 @@ Transform:
   - {fileID: 92308115}
   m_Father: {fileID: 863957912}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &333736173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333736175}
+  - component: {fileID: 333736174}
+  m_Layer: 0
+  m_Name: PlayMakerGUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &333736174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333736173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -73581967, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewOnGUI: 1
+  enableGUILayout: 1
+  drawStateLabels: 1
+  enableStateLabelsInBuilds: 0
+  GUITextureStateLabels: 0
+  GUITextStateLabels: 0
+  filterLabelsWithDistance: 0
+  maxLabelDistance: 10
+  controlMouseCursor: 1
+  labelScale: 1
+--- !u!4 &333736175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333736173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &344875460
 GameObject:
@@ -2819,9 +2902,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476832024}
-  - component: {fileID: 476832025}
   m_Layer: 0
-  m_Name: Player
+  m_Name: xxxxx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2838,149 +2920,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3843708874622498347}
   - {fileID: 1428844406}
-  - {fileID: 1297650284}
   - {fileID: 1071695636}
   - {fileID: 710442654}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &476832025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476832023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fsm:
-    dataVersion: 2
-    usedInTemplate: {fileID: 0}
-    name: FSM
-    startState: State 1
-    states:
-    - name: State 1
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 50
-        y: 100
-        width: 100
-        height: 16
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames: []
-        customNames: []
-        actionEnabled: 
-        actionIsOpen: 
-        actionStartIndex: 
-        actionHashCodes: 
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams: []
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 
-        paramName: []
-        paramDataPos: 
-        paramByteDataSize: 
-    events: []
-    globalTransitions: []
-    variables:
-      floatVariables: []
-      intVariables: []
-      boolVariables: []
-      stringVariables: []
-      vector2Variables: []
-      vector3Variables: []
-      colorVariables: []
-      rectVariables: []
-      quaternionVariables: []
-      gameObjectVariables: []
-      objectVariables: []
-      materialVariables: []
-      textureVariables: []
-      arrayVariables: []
-      enumVariables: []
-      categories:
-      - 
-      variableCategoryIDs: 
-    description: 
-    docUrl: 
-    showStateLabel: 0
-    maxLoopCount: 0
-    watermark: 
-    password: 
-    locked: 0
-    manualUpdate: 0
-    keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
-    ExposedEvents: []
-    RestartOnEnable: 1
-    EnableDebugFlow: 0
-    EnableBreakpoints: 1
-    editorFlags: 1
-    activeStateName: 
-    mouseEvents: 0
-    handleLevelLoaded: 0
-    handleTriggerEnter2D: 0
-    handleTriggerExit2D: 0
-    handleTriggerStay2D: 0
-    handleCollisionEnter2D: 0
-    handleCollisionExit2D: 0
-    handleCollisionStay2D: 0
-    handleTriggerEnter: 0
-    handleTriggerExit: 0
-    handleTriggerStay: 0
-    handleCollisionEnter: 0
-    handleCollisionExit: 0
-    handleCollisionStay: 0
-    handleParticleCollision: 0
-    handleControllerColliderHit: 0
-    handleJointBreak: 0
-    handleJointBreak2D: 0
-    handleOnGUI: 0
-    handleFixedUpdate: 0
-    handleLateUpdate: 0
-    handleApplicationEvents: 0
-    handleUiEvents: 0
-    handleLegacyNetworking: 0
-    handleAnimatorMove: 0
-    handleAnimatorIK: 0
-  fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
 --- !u!1 &492508013
 GameObject:
   m_ObjectHideFlags: 0
@@ -3903,7 +3848,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 476832024}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0.651, z: 0.007}
 --- !u!1 &730694850
 GameObject:
@@ -6675,107 +6620,6 @@ Transform:
   m_Father: {fileID: 1734875357}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &987377241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  rotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  skyIntensityMode:
-    m_OverrideState: 0
-    m_Value: 0
-  exposure:
-    m_OverrideState: 0
-    m_Value: 10
-  multiplier:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxValue:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
-  upperHemisphereLuxColor:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
-  desiredLuxValue:
-    m_OverrideState: 0
-    m_Value: 20000
-  updateMode:
-    m_OverrideState: 0
-    m_Value: 0
-  updatePeriod:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  includeSunInBaking:
-    m_OverrideState: 0
-    m_Value: 0
-  hdriSky:
-    m_OverrideState: 0
-    m_Value: {fileID: 8900000, guid: 54a3a0570aebe8949bec4966f1376581, type: 3}
-  enableBackplate:
-    m_OverrideState: 0
-    m_Value: 0
-  backplateType:
-    m_OverrideState: 0
-    m_Value: 0
-  groundLevel:
-    m_OverrideState: 0
-    m_Value: 0
-  scale:
-    m_OverrideState: 0
-    m_Value: {x: 32, y: 32}
-  projectionDistance:
-    m_OverrideState: 0
-    m_Value: 16
-    min: 0.0000001
-  plateRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexRotation:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 360
-  plateTexOffset:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0}
-  blendAmount:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-    max: 100
-  shadowTint:
-    m_OverrideState: 0
-    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    hdr: 0
-    showAlpha: 1
-    showEyeDropper: 1
-  pointLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  dirLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
-  rectLightShadow:
-    m_OverrideState: 0
-    m_Value: 0
 --- !u!1 &997420185
 GameObject:
   m_ObjectHideFlags: 0
@@ -7217,7 +7061,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 476832024}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -0.55300003, z: 0.006}
 --- !u!1 &1081741406
 GameObject:
@@ -7471,6 +7315,107 @@ Transform:
   m_Father: {fileID: 956825266}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1118311809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  rotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  skyIntensityMode:
+    m_OverrideState: 0
+    m_Value: 0
+  exposure:
+    m_OverrideState: 0
+    m_Value: 10
+  multiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxValue:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+  upperHemisphereLuxColor:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 0}
+  desiredLuxValue:
+    m_OverrideState: 0
+    m_Value: 20000
+  updateMode:
+    m_OverrideState: 0
+    m_Value: 0
+  updatePeriod:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+  includeSunInBaking:
+    m_OverrideState: 0
+    m_Value: 0
+  hdriSky:
+    m_OverrideState: 0
+    m_Value: {fileID: 8900000, guid: 54a3a0570aebe8949bec4966f1376581, type: 3}
+  enableBackplate:
+    m_OverrideState: 0
+    m_Value: 0
+  backplateType:
+    m_OverrideState: 0
+    m_Value: 0
+  groundLevel:
+    m_OverrideState: 0
+    m_Value: 0
+  scale:
+    m_OverrideState: 0
+    m_Value: {x: 32, y: 32}
+  projectionDistance:
+    m_OverrideState: 0
+    m_Value: 16
+    min: 0.0000001
+  plateRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0}
+  blendAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 100
+  shadowTint:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  pointLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  dirLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  rectLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!1 &1126771592
 GameObject:
   m_ObjectHideFlags: 0
@@ -8394,13 +8339,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297650280}
-  m_LocalRotation: {x: -0.00000025257376, y: -0.004825879, z: 0.00005233675, w: 0.9999884}
-  m_LocalPosition: {x: 0.42371717, y: 0.97, z: -1.4586623}
+  m_LocalRotation: {x: 0.09260406, y: -0, z: -0, w: 0.995703}
+  m_LocalPosition: {x: -0.07, y: 0.41, z: -1.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 476832024}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -0.55300003, z: 0.006}
+  m_Father: {fileID: 1915591329}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 10.627001, y: 0, z: 0}
 --- !u!114 &1297650285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9225,7 +9170,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 476832024}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1432050959
 GameObject:
@@ -10251,7 +10196,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1621800702
 GameObject:
@@ -12395,6 +12340,276 @@ Transform:
   m_Father: {fileID: 1171651291}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1915591328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1915591329}
+  - component: {fileID: 1915591330}
+  m_Layer: 0
+  m_Name: CameraBase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1915591329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915591328}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.819, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1297650284}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1915591330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915591328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.MoveTowards
+        - HutongGames.PlayMaker.Actions.MouseLook
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: fa0e5402e6fd4500
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 1915591328}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 10
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 3
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -3
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -60
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 60
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        byteData: 0000000001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000130000001c000000110000000f0000000f0000001700000014000000070000000f0000000f0000000f0000000f0000000f0000000f00000001000000
+        paramName:
+        - gameObject
+        - targetObject
+        - targetPosition
+        - ignoreVertical
+        - maxSpeed
+        - finishDistance
+        - finishEvent
+        - gameObject
+        - axes
+        - sensitivityX
+        - sensitivityY
+        - minimumX
+        - maximumX
+        - minimumY
+        - maximumY
+        - everyFrame
+        paramDataPos: 00000000000000000000000000000000000000000100000000000000010000000000000002000000030000000400000005000000060000000700000004000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000001000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 1
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!1 &1923837104
 GameObject:
   m_ObjectHideFlags: 0
@@ -17816,8 +18031,9 @@ Transform:
   - {fileID: 5801615081065292626}
   - {fileID: 1874038414}
   - {fileID: 8721161407588832959}
-  m_Father: {fileID: 476832024}
-  m_RootOrder: 0
+  - {fileID: 224389034}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3990783031510383072
 GameObject:
@@ -17984,8 +18200,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3843708874622498347}
   - component: {fileID: 4475531809149660306}
+  - component: {fileID: 4475531809149660307}
   m_Layer: 0
-  m_Name: RamModel
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18000,16 +18217,356 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4475531809149660305}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: d229b11beed495b4a88646f1895fb8a5, type: 3}
   m_Controller: {fileID: 9100000, guid: e404271381f6f8a45981a26d5d8f1b8b, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4475531809149660307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4475531809149660305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: FSM
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetAxisVector
+        - HutongGames.PlayMaker.Actions.SetAnimatorFloat
+        - HutongGames.PlayMaker.Actions.SmoothLookAtDirection
+        - HutongGames.PlayMaker.Actions.SetVelocity
+        - HutongGames.PlayMaker.Actions.Vector3Multiply
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 00000000070000000d000000160000001d000000
+        actionHashCodes: b691f703f9cb7200f804e7045552ad05bbee8e03
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Horizontal
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Vertical
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Mag
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 1
+          name: Magnitude
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: Magnitude
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: InputVector
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: InputVector
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: InputVector
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: InputVector
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        byteData: 00000000010000000001000000000101
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 12000000120000000f00000007000000130000001c0000000f00000014000000120000000f0000000f0000000100000007000000140000001c0000000f0000001c000000110000000f000000010000001700000011000000140000001c0000000f0000000f0000000f00000007000000010000001c0000000f00000001000000
+        paramName:
+        - horizontalAxis
+        - verticalAxis
+        - multiplier
+        - mapToPlane
+        - relativeTo
+        - storeVector
+        - storeMagnitude
+        - gameObject
+        - parameter
+        - Value
+        - dampTime
+        - everyFrame
+        - everyFrameOption
+        - gameObject
+        - targetDirection
+        - minMagnitude
+        - upVector
+        - keepVertical
+        - speed
+        - lateUpdate
+        - finishEvent
+        - finish
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - vector3Variable
+        - multiplyBy
+        - everyFrame
+        paramDataPos: 0000000001000000000000000000000000000000000000000100000000000000020000000200000003000000040000000500000001000000010000000400000002000000000000000500000009000000000000000100000002000000030000000600000007000000080000000a0000000e00000004000000090000000f000000
+        paramByteDataSize: 0000000000000000000000000400000000000000000000000000000000000000000000000000000000000000010000000400000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000400000001000000000000000000000001000000
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Magnitude
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: InputVector
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 0000000000000000
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 3
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
 --- !u!4 &4504760822197499230
 Transform:
   m_ObjectHideFlags: 0
