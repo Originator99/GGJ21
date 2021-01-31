@@ -6,6 +6,7 @@ public class EnemyBrain : MonoBehaviour
 {
     public Transform LookAt;
     public float movementSpeed = 1f;
+    public Enemy enemyScript;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,7 @@ public class EnemyBrain : MonoBehaviour
         if(LookAt != null)
         {
             transform.LookAt(LookAt);
-            if(Vector3.Distance(LookAt.position, transform.position) > 2f)
+            if(Vector3.Distance(LookAt.position, transform.position) > 2f && !enemyScript.isDead)
                 transform.position = Vector3.MoveTowards(transform.position, LookAt.position, movementSpeed);
         }
     }
