@@ -43,6 +43,7 @@ public class Enemy : MonoBehaviour {
     private void DoDeadEffect() {
         animator.SetBool("Hit", false);
         animator.SetBool("Death", true);
+        GameEventSystem.RaiseGameEvent(EVENT_TYPE.ENEMY_KILLED);
         isDead = true;
     }
     private void DoHitEffect() {
