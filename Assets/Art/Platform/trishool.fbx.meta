@@ -3,7 +3,12 @@ guid: 5afc90ee4cdbea249b5759d2ab0bb427
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trishool
+    second: {fileID: 2100000, guid: 98eee70d03ac5924984641b0179c03e0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -81,7 +86,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.015239999
+    globalScale: 0.05
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

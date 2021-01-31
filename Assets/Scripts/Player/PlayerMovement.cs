@@ -16,6 +16,14 @@ public class PlayerMovement : MonoBehaviour {
         characterController = GetComponent<CharacterController>();
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag.ToLower().Contains("finish"))
+        {
+            Debug.Log("WIN");
+        }
+    }
+
     private void Update() {
         Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 

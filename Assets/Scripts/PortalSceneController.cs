@@ -16,7 +16,6 @@ public class PortalSceneController :MonoBehaviour {
                 }
             }
         } else {
-            
         }
         if(levelPortal != null) {
             

@@ -3,7 +3,22 @@ guid: 6a2c730ffd6ae9a4fabf7bcd5a920a4e
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: main_body
+    second: {fileID: 2100000, guid: 57e89b1c4e33b9045a04176d73880df5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: other_props
+    second: {fileID: 2100000, guid: 72cc96426bb1c6a4f99ec26ef84f4c93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sitting_rock
+    second: {fileID: 2100000, guid: f808423dba5e47042a7d16ddb92e9952, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -81,7 +96,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.015239999
+    globalScale: 0.05
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

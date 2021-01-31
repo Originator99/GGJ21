@@ -51,11 +51,11 @@ MonoBehaviour:
   - controller: {fileID: 4608410704988389454}
     redirectsToLevel: 1
   - controller: {fileID: 4608410705279133865}
-    redirectsToLevel: 2
+    redirectsToLevel: 1
   - controller: {fileID: 4608410705965299341}
-    redirectsToLevel: 3
+    redirectsToLevel: 1
   - controller: {fileID: 4608410705152845114}
-    redirectsToLevel: 4
+    redirectsToLevel: 1
   sitaCage: {fileID: 0}
 --- !u!1 &4978860596219591525
 GameObject:

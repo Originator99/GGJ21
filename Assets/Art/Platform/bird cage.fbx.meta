@@ -3,7 +3,12 @@ guid: 8c0788d58208c544a8e69104e329a313
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gold
+    second: {fileID: 2100000, guid: e86fbc6b0db58c442ad5279b45fbd97a, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -81,7 +86,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.015239999
+    globalScale: 0.05
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -3,7 +3,12 @@ guid: 8e0b0fdd22ac68b4a94cccf91bd9f74f
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hippo
+    second: {fileID: 2100000, guid: 251969e1c4f2bf244819ee2028516793, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -81,7 +86,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.015239999
+    globalScale: 0.05
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

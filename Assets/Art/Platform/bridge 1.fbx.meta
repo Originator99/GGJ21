@@ -3,7 +3,27 @@ guid: e5b7d8e1e43928841b06d46aec31e95b
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base
+    second: {fileID: 2100000, guid: bf33cfbf46bcfb1449c297e90b8c05fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gold_ball
+    second: {fileID: 2100000, guid: aae88a0b543e5c64b9ec13ab306fdebb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: holder
+    second: {fileID: 2100000, guid: 49e4d4e9450f2344796c6a5e8f29d1be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: side_wood
+    second: {fileID: 2100000, guid: 37caeefe29a623049b80a02fd283c077, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -81,7 +101,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.015239999
+    globalScale: 0.05
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

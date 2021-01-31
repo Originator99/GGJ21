@@ -3,7 +3,12 @@ guid: 493c99b840fff8d48a1b92ad23391d43
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: diaz
+    second: {fileID: 2100000, guid: 1d8a01d695903bd4382264bf86d1c730, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -81,7 +86,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.015239999
+    globalScale: 0.05
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

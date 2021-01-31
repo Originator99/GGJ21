@@ -33,4 +33,12 @@ public class GameManager : MonoBehaviour {
     private void OnNewLevelLoad(int id) {
         levelLoader.PlaceLevel(id);
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            GameStart();
+        }
+    }
 }

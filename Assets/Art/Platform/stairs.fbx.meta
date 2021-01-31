@@ -3,7 +3,27 @@ guid: 86e4579ff042ede4ab1d291d03361a2b
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: f8750ac77bfcb8746b1e4fbea9b38455, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: silver_railings
+    second: {fileID: 2100000, guid: 4a3e0d607ac4c604dab64353418e60c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stair_holders
+    second: {fileID: 2100000, guid: 263377d9035d66644bce25237339c069, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stairs
+    second: {fileID: 2100000, guid: 59b53f96e40759948bd4f9d65ceae202, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -81,7 +101,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.015239999
+    globalScale: 0.05
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
