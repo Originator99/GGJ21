@@ -9,6 +9,7 @@ public class ShootingController : MonoBehaviour {
     public Animator animator;
 
     public GameObject muzzleFlash;
+    public GameObject muzzleFlashPrefab;
 
     //stats
     private int magSize = 60;
@@ -71,6 +72,14 @@ public class ShootingController : MonoBehaviour {
             reloading = true;
             animator.SetBool("Reload", true);
             Invoke("Reload", reloadTime);
+        }
+        GameObject muzzleVFX = Instantiate(muzzleFlashPrefab, muzzleFlash.transform.position, Quaternion.identity);
+        var ps = muzzleVFX.GetComponent<ParticleSystem>();
+        if(ps != null)
+            Destroy(muzzleVFX, ps.main.duration);
+        else {
+            var psChild = muzzleVFX.transform.GetChild(0).GetComponent<ParticleSystem>();
+            Destroy(muzzleVFX, psChild.main.duration);
         }
     }
 
