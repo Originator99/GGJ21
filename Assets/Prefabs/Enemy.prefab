@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1665194895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1665194896}
+  m_Layer: 0
+  m_Name: RayPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1665194896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665194895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.895, z: 0.216}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5674492572501084435}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &175838491994193006
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +1004,7 @@ GameObject:
   - component: {fileID: 1756390912159175529}
   - component: {fileID: 5040662964814042024}
   - component: {fileID: 5040662964814042023}
-  - component: {fileID: 5040662964814042022}
+  - component: {fileID: 850182778628193772}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: EnemyBody
@@ -997,6 +1027,7 @@ Transform:
   - {fileID: 7239696163566123738}
   - {fileID: 211539589017069959}
   - {fileID: 6196770247867810374}
+  - {fileID: 1665194896}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -1049,7 +1080,7 @@ MonoBehaviour:
   healthBarUI: {fileID: 6196770246778663714}
   healthBar: {fileID: 6196770247220105777}
   isDead: 0
---- !u!114 &5040662964814042022
+--- !u!114 &850182778628193772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1061,9 +1092,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e8e6169e947cce4e8fc2c3aa8f86f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1756390912159175529}
+  attackRayPoint: {fileID: 1665194896}
   LookAt: {fileID: 0}
-  movementSpeed: 0.1
-  enemyScript: {fileID: 5040662964814042023}
+  movementSpeed: 1
 --- !u!1 &5057649102185345266
 GameObject:
   m_ObjectHideFlags: 0

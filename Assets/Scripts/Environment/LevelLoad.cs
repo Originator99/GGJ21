@@ -56,8 +56,8 @@ public class LevelLoad : MonoBehaviour {
                 ScoreManager.GenerateSitaPortal();
             }
 
-            player.SetActive(true);
             data.PlacePlayer(player);
+            player.SetActive(true);
             portalsController.SetLevelPortalOrSita(data.GetLevelPortals(), data.GetSitaCage(), data.levelID);
         } else {
             Debug.LogError("Data holder is null");
