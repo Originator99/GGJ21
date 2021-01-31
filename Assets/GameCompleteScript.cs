@@ -9,6 +9,7 @@ public class GameCompleteScript : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Debug.Log("trigger win");
+            GameEventSystem.RaiseGameEvent(EVENT_TYPE.END_GAME);
         }
     }
 }

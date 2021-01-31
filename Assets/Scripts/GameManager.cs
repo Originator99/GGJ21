@@ -5,11 +5,19 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
     public LevelLoad levelLoader;
-
+    public GameObject startStory, endGame;
 
     private void Start() {
         GameEventSystem.GameEventHandler += HandleGameEvents;
         GameStart();
+        StartCoroutine(GameStory());
+    }
+
+    IEnumerator GameStory()
+    {
+        startStory.SetActive(true);
+        yield return new WaitForSeconds(5f);
+        startStory.SetActive(false);
     }
 
     private void OnDestroy() {
@@ -23,6 +31,15 @@ public class GameManager : MonoBehaviour {
         if(type == EVENT_TYPE.ENEMY_KILLED) {
             ScoreManager.OnEnemyKilled();
         }
+        if(type == EVENT_TYPE.END_GAME)
+        {
+            EndGame();
+        }
+    }
+
+    private void EndGame()
+    {
+        endGame.SetActive(true);
     }
 
     private void GameStart() {
