@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4978860596037044855
 Transform:
   m_ObjectHideFlags: 0
@@ -451,11 +451,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2943140972941394891, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e72eab7e2dcd6b43bca4cc84ce208f6, type: 2}
+    - target: {fileID: 6835456506759708423, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e06ec818858be344846e78a7be7a878, type: 2}
     - target: {fileID: 8448707527015460401, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9012960646032493997, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc724d373ee2758498333af6d15a21b2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7, type: 3}
 --- !u!4 &929155084682469353 stripped
@@ -623,11 +638,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 2943140972941394891, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6e72eab7e2dcd6b43bca4cc84ce208f6, type: 2}
     - target: {fileID: 6045631571806339530, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
         type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 6835456506759708423, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3e06ec818858be344846e78a7be7a878, type: 2}
     - target: {fileID: 7180622622799059984, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
         type: 3}
       propertyPath: m_TagString
@@ -638,6 +663,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 9012960646032493997, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fc724d373ee2758498333af6d15a21b2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d66a174a8b3cbb840b5a7b8ef8ff27e7, type: 3}
 --- !u!4 &4797123226301865350 stripped
